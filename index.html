@@ -84,7 +84,7 @@
 	    	<li class="list-group-item col-md-6" ng-repeat="product in store.products">
 	    		<h3>{{ product.name }}</h3>
 	    		<br>
-                <img ng-src="{{product.images[0].full}}"/>
+                <img ng-src="{{product.images[0].full}}" style="height=300px; width=300px;"/>
 	    		<br><br>
 	    		<section ng-controller="PanelController as panel">
 	    			<ul class="nav nav-pills col-md-12">
@@ -94,15 +94,15 @@
 	    			</ul>
 						<div class="off-panel" ng-show="panel.isSelected(1)">
 							<h4>Ingredients</h4>
-							<p style="white-space:pre-wrap; text-align: left; height: 300px; overflow: scroll;">{{product.description}}</p>
+							<p style="white-space:pre-wrap; text-align: left; height: 200px; overflow: scroll;">{{product.description}}</p>
 						</div>
 						<div class="off-panel" ng-show="panel.isSelected(2)">
 							<h4>Preparation</h4>
-							<p style="white-space:pre-wrap; text-align: left; height: 300px; overflow: scroll;">{{product.specification}}</p>
+							<p style="white-space:pre-wrap; text-align: left; height: 200px; overflow: scroll;">{{product.specification}}</p>
 						</div>
 						<div class="off-panel" ng-show="panel.isSelected(3)">
 							<h4>Reviews</h4>
-                            <div style="height: 300px; overflow: scroll;">
+                            <div style="height: 200px; overflow: scroll;">
 							<blockquote ng-repeat="review in product.reviews" >
 								<b>Stars: {{review.stars}}</b>
 								<p>{{review.body}}</p>
