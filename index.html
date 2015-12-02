@@ -83,13 +83,9 @@
 	  	<ul class="list-group">
 	    	<li class="list-group-item col-md-6" ng-repeat="product in store.products">
 	    		<h3>{{ product.name }}</h3>
-	    		<h5>{{ product.price | currency }}</h5>
-	    		<img ng-src="{{product.images[0].full}}"/>
 	    		<br>
-	    		<br>
-	    		<button ng-show="product.canPurchase">Add to Cart</button>
-	    		<br>
-	    		<br>
+                <img ng-src="{{product.images[0].full}}"/>
+	    		<br><br>
 	    		<section ng-controller="PanelController as panel">
 	    			<ul class="nav nav-pills col-md-12">
 	    				<li ng-class="{ active:panel.isSelected(1) }" class="col-md-4"> <a href ng-click="panel.selectTab(1)">Ingredients</a></li>
@@ -98,15 +94,16 @@
 	    			</ul>
 						<div class="off-panel" ng-show="panel.isSelected(1)">
 							<h4>Ingredients</h4>
-							<p style="white-space:pre-wrap; text-align: left;">{{product.description}}</p>
+							<p style="white-space:pre-wrap; text-align: left; height: 300px; overflow: scroll;">{{product.description}}</p>
 						</div>
 						<div class="off-panel" ng-show="panel.isSelected(2)">
 							<h4>Preparation</h4>
-							<p style="white-space:pre-wrap; text-align: left;">{{product.specification}}</p>
+							<p style="white-space:pre-wrap; text-align: left; height: 300px; overflow: scroll;">{{product.specification}}</p>
 						</div>
 						<div class="off-panel" ng-show="panel.isSelected(3)">
 							<h4>Reviews</h4>
-							<blockquote ng-repeat="review in product.reviews">
+                            <div style="height: 300px; overflow: scroll;">
+							<blockquote ng-repeat="review in product.reviews" >
 								<b>Stars: {{review.stars}}</b>
 								<p>{{review.body}}</p>
 								<cite>- {{review.author}}</cite>
@@ -131,14 +128,15 @@
 									<p>Enter Your Review</p>
 									<textarea ng-model="review.body" placeholder="enter your review"></textarea>
 									<br>
-									<br>
+									
 									<p>Email Address</p>
 									<input ng-model="review.author" type="email" placeholder="you@email.com">
-									<br>
+									
 									<br>
 									<input type="submit" value="Submit">
 								</form>
 		    				</div>
+                                </div>
 						</div>
 	    		</section>
 	    	</li>
