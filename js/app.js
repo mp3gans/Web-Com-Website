@@ -8,7 +8,7 @@
             name: 'Dope Diamond',
             price: 82.95,
             description: "8 cups Chicken Stock or fat-free, lower-sodium chicken broth\n2 (4-ounce) skinless, bone-in chicken thighs\n1 (12-ounce) skinless, bone-in chicken breast half\n2 cups diagonally sliced carrot\n2 cups diagonally sliced celery\n1 cup chopped onion\n6 ounces uncooked medium egg noodles\n1/2 teaspoon kosher salt\n1/2 teaspoon black pepper\nCelery leaves (optional)",
-            specification: "Phasellizzle fo shizzle my nizzle crunk. Curabitur non velizzle the bizzle pede crackalackin facilisizzle. Bow wow wow rizzle nulla, iaculizzle fo shizzle, break.",
+            specification: "Step 1: Combine the chicken stock, chicken thighs and breast half in a Dutch oven over medium-high heat\nStep 2: Bring to a boil. Reduce heat. Simmer for 20 minutes\nStep 3: Remove chicken from pan. Let stand for 10 minutes\nStep 4: Remove chicken from bones. Shred meat into bite-sized pieces. Discard bones\nStep 5: Add carrot, celery, and onion to pan. Cover and simmer for 10 minutes\nStep 6: Add noodles and simmer 6 minutes\nStep 7: Add chicken, salt, and black pepper. Cook for 2 minutes or until noodles are done\nStep 8: Garnish with celery leaves, if desired",
             review: "Maecenas quis metus izzle fo shizzle my nizzle yo gangsta. Break yo neck, yall dope viverra fo. Curabitizzle sollicitudin boom shackalack quizzle purus.",
             canPurchase: true,
             soldOut: false,
@@ -65,47 +65,17 @@
             name: 'Old Fashion Chicken Soup',
             calories: 82.95,
             ingredients: [
-                {
-                    item: '8 cups Chicken Stock or fat-free, lower-sodium chicken broth'
-                },
-                {
-                    item: '2 (4-ounce) skinless, bone-in chicken thighs'
-                },
-                {
-                    item: '1 (12-ounce) skinless, bone-in chicken breast half'
-                },
-                {
-                    item: '2 cups diagonally sliced carrot'
-                },
-                {
-                    item: '2 cups diagonally sliced celery'
-                },
-                {
-                    item: '1 cup chopped onion'
-                },
-                {
-                    item: '6 ounces uncooked medium egg noodles'
-                },
-                {
-                    item: '1/2 teaspoon kosher salt'
-                },
-                {
-                    item: '1/2 teaspoon black pepper'
-                },
-                {
-                    item: 'Celery leaves (optional)'
-                }
             ],
             preparation: [
                 {
-                    "Step 1": 'Combine the chicken stock, chicken thighs and breast half in a Dutch oven over medium-high heat',
-                    "Step 2": 'Bring to a boil. Reduce heat. Simmer for 20 minutes',
-                    "Step 3": 'Remove chicken from pan. Let stand for 10 minutes',
-                    "Step 4": 'Remove chicken from bones. Shred meat into bite-sized pieces. Discard bones',
-                    "Step 5": 'Add carrot, celery, and onion to pan. Cover and simmer for 10 minutes',
-                    "Step 6": 'Add noodles and simmer 6 minutes',
-                    "Step 7": 'Add chicken, salt, and black pepper. Cook for 2 minutes or until noodles are done',
-                    "Step 8": 'Garnish with celery leaves, if desired'
+                    "Step 1": '',
+                    "Step 2": '',
+                    "Step 3": '',
+                    "Step 4": '',
+                    "Step 5": '',
+                    "Step 6": '',
+                    "Step 7": '',
+                    "Step 8": ''
                 }
             ],
             images: [
