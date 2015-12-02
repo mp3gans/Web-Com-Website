@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="CascadingStyleSheets.css"  >
+<title>Become One</title>
+</head>
+    
+<body ng-controller="StoreController as store">
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid"> 
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Become One</a></div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="defaultNavbar1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li class="active"><a href="recipes.html">Recipes<span class="sr-only">(current)</span></a></li>
+                   <!-- <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Recipes<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">By Allergy</a></li>
+                            <li><a href="#">By Disease</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">List All</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="register.html">Register</a></li>
+                            <li><a href="log_in.html">Log In</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Account Settings</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Favorites</a></li>
+                            <li><a href="#">Grocery List</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse --> 
+        </div>
+        <!-- /.container-fluid --> 
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h1 class="text-center">Take a Look at our Amazing Recipes!</h1>
+            </div>
+        </div>
+        <hr>
+    <!--</div>
+     <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-10 col-lg-offset-1" id="index-main"><!--<img src="assets/healthy-living-main.jpg" height=""></div>
+        </div>-->
+        
+        <!-- Recipies -->
+        
+        <div class="container spacer" style="width=500px;">
+            <center><table id="recipe-links" style="border-collapse: separate;
+    border-spacing: 15px;" ng-model="value">
+                <tr>
+                    <td><label>Search: <input ng-model="searchText"></label></td>
+                    <td><a id="recipe-link-1" href ng-click="value = ''">Show All</a></td>
+                    <td><a id="recipe-link-2" href ng-click="value = 'Cancer'">Cancer</a></td>
+                    <td><a id="recipe-link-3" href ng-click="value = 'Blood Pressure'">Blood Pressure</a></td>
+                    <td><a id="recipe-link-4" href ng-click="value = 'Diabetes'">Diabetes</a></td>
+                    <td><a id="recipe-link-5" href ng-click="value = 'Keeping Figure'">General Healthy Foods</a></td>
+                </tr>
+            </table></center>
+	  	<ul class="list-group" id="searchTextResults">
+	    	<li class="list-group-item col-md-6" ng-repeat="product in store.products | filter:searchText | filter:value">
+	    		<h3>{{ product.name }}</h3>
+	    		<br>
+                <img ng-src="{{product.images[0].full}}" style="height=300px; width=300px;"/>
+	    		<br><br>
+	    		<section ng-controller="PanelController as panel">
+	    			<ul class="nav nav-pills col-md-12">
+	    				<li ng-class="{ active:panel.isSelected(1) }" class="col-md-4"> <a href ng-click="panel.selectTab(1)">Ingredients</a></li>
+	    				<li ng-class="{ active:panel.isSelected(2) }" class="col-md-4"> <a href ng-click="panel.selectTab(2)">Preparation</a></li>
+	    				<li ng-class="{ active:panel.isSelected(3) }" class="col-md-4"> <a href ng-click="panel.selectTab(3)">Reviews</a></li>
+	    			</ul>
+						<div class="off-panel" ng-show="panel.isSelected(1)">
+							<h4>Ingredients</h4>
+							<p style="white-space:pre-wrap; text-align: left; height: 200px; overflow: scroll;">{{product.description}}</p>
+						</div>
+						<div class="off-panel" ng-show="panel.isSelected(2)">
+							<h4>Preparation</h4>
+							<p style="white-space:pre-wrap; text-align: left; height: 200px; overflow: scroll;">{{product.specification}}</p>
+						</div>
+						<div class="off-panel" ng-show="panel.isSelected(3)">
+							<h4>Reviews</h4>
+                            <div style="height: 200px; overflow: scroll;">
+							<blockquote ng-repeat="review in product.reviews" >
+								<b>Stars: {{review.stars}}</b>
+								<p>{{review.body}}</p>
+								<cite>- {{review.author}}</cite>
+							</blockquote>
+							<div class="well">
+								<h4>Add Your Review</h4>
+								<form name="reviewForm">
+									<blockquote>
+										<b>Stars: {{review.stars}}</b>
+										<p>{{review.body}}</p>
+										<cite>- {{review.author}}</cite>
+									</blockquote>
+									<p>Select Rating</p>
+									<select ng-model="review.stars">
+										<option value="1">1 star</option>
+										<option value="2">2 stars</option>
+										<option value="3">3 stars</option>
+										<option value="4">4 stars</option>
+									</select>
+									<br>
+									<br>
+									<p>Enter Your Review</p>
+									<textarea ng-model="review.body" placeholder="enter your review"></textarea>
+									<br>
+									
+									<p>Email Address</p>
+									<input ng-model="review.author" type="email" placeholder="you@email.com">
+									
+									<br>
+									<input type="submit" value="Submit">
+								</form>
+		    				</div>
+                                </div>
+						</div>
+	    		</section>
+	    	</li>
+			</ul>
+		</div>
+        
+        <hr>
+        <div class="row">
+            <div class="text-center col-md-6 col-md-offset-3 col-sm-6 col-lg-offset-0">
+                <h4>Like us on Social Media </h4>
+                <p>
+                    <a href="http://www.facebook.com"><img src="assets/Facebook.png" width="55"></a>
+                    <a href="http://www.twitter.com"><img src="assets/Twitter.png" width="55"></a>
+                    <a href="http://www.pinterest.com"><img src="assets/Pinterest.png" width="55"></a>
+                    <a href="http://www.rss.com"><img src="assets/RSS.png" width="55"></a>
+                </p>
+            </div>
+            <div class="text-center col-md-6 col-sm-6"><h4>Contact Us </h4>
+                <p>Phone: 614-867-5309<br>Toll Free: 1-800-649-2568<br>E-mail: CustomerService@BecomeOne.com</p></div>
+            <hr>
+            <div class="text-center col-md-6 col-md-offset-3 col-sm-12">
+                <p>Copyright &copy; 2015 &middot; All Rights Reserved</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/bootstrap.js"></script>
+    </body>
+</html>
