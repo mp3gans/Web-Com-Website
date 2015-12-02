@@ -51,7 +51,7 @@
             ]
         },
 		{/*3*/
-            name: 'Lemon Risotto with Peas, Tarragon, and Leeks',
+            name: 'Lemon Risotto with Tarragon and Leeks',
             description: "1 cup fresh green peas\n4 cups Homemade Chicken Stock\n2 tablespoons extra-virgin olive oil\n1 1/2 cups finely chopped leek (about 2)\n1/2 cup chopped shallots\n1 cup uncooked Carnaroli or Arborio rice or other medium-grain rice 3 tablespoonsdry white wine\n1/2 cup (2 ounces) grated fresh Parmigiano-Reggiano cheese\n1 teaspoon grated lemon rind\n2 tablespoons fresh lemon juice\n1/2 teaspoon salt\n1/8 teaspoon freshly ground black pepper\n2 tablespoons chopped fresh tarragon\n1 tablespoon butter",
             specification: "Step 1: Bring a small saucepan of water to a boil.\nStep 2: Add peas; boil 1 minute. Drain and rinse with cold water; drain well.\nStep 3: Bring Homemade Chicken Stock to a simmer in a small saucepan (do not boil). Keep warm over low heat.\nStep 4: Heat oil in a large saucepan over medium heat.\nStep 5: Add leek and shallots to pan; cook 7 minutes or until tender, stirring frequently.\nStep 6: Add rice; cook 1 minute, stirring constantly.\nStep 7: Add wine; cook 30 seconds or until the liquid is nearly absorbed, stirring constantly.\nStep 8: Stir in 1 cup stock; cook 4 minutes or until the liquid is nearly absorbed, stirring constantly.\nStep 9: Add remaining stock, 1/2 cup at a time, stirring constantly until each portion of stock is absorbed.\nStep 10: Stir in peas; cook 1 minute.\nStep 11: Stir in cheese, rind, juice, salt, and pepper.\nStep 12: Remove from heat; stir in tarragon and butter.",
             illness: 'Cancer',
@@ -235,7 +235,7 @@
             ]
         },
 		{/*11*/
-            name: 'Smoked Salmon & Cheese Mini Twice-Baked Potatoes',
+            name: 'Smoked Salmon Twice-Baked Potatoes',
             description: "6 small Yukon gold or red potatoes (about 2 pounds)\n1 teaspoon olive oil\n1/2 teaspoon salt, divided\nCooking spray\n2 tablespoons fat-free milk\n1 tablespoon butter\n1/2 teaspoon black pepper\n1/2 cup (2 ounces) finely grated white cheddar cheese\n2 tablespoons finely chopped smoked salmon (1 ounce)",
             specification: "Step 1: Preheat oven to 400°.\nStep 2: Rub potatoes with oil; sprinkle with 1/4 teaspoon salt.\nStep 3: Place potatoes on a jelly-roll pan coated with cooking spray.\nStep 4: Bake at 400° for 35 minutes or until tender. Remove from oven; cool 10 minutes.\nStep 5: Cut potatoes in half crosswise; cut off a small portion of the rounded edge so the potato will stand upright.\nStep 6: Carefully scoop out about 1 teaspoon pulp from each half, leaving the shells intact.\nStep 7: Combine potato pulp, milk, butter, pepper, cheese, and remaining 1/4 teaspoon salt in a bowl.\nStep 8: Spoon about 1 heaping teaspoon potato mixture into each potato shell.\nStep 9: Arrange stuffed potatoes on a jelly-roll pan; top each with 1/2 teaspoon chopped salmon.\nStep 10: Bake at 400° for 15 minutes or until thoroughly heated.",
             illness: 'Keeping Figure',
