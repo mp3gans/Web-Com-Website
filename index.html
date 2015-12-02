@@ -98,12 +98,11 @@
 	    			</ul>
 						<div class="off-panel" ng-show="panel.isSelected(1)">
 							<h4>Ingredients</h4>
-							<ul><li ng-repeat="(amount, item) in recipes.ingredients">{{amount}}: {{item}}</li></ul>
-                            <p ng-repeat="stuff in recipes.ingredients">{{stuff.ingredients}}</p>
+							<p style="white-space:pre-wrap; text-align: left;">{{product.description}}</p>
 						</div>
 						<div class="off-panel" ng-show="panel.isSelected(2)">
 							<h4>Preparation</h4>
-							<p>{{product.preparation}}</p>
+							<p style="white-space:pre-wrap; text-align: left;">{{product.specification}}</p>
 						</div>
 						<div class="off-panel" ng-show="panel.isSelected(3)">
 							<h4>Reviews</h4>

@@ -98,14 +98,14 @@
             ],
             preparation: [
                 {
-                    step1: 'Combine the chicken stock, chicken thighs and breast half in a Dutch oven over medium-high heat',
-                    step2: 'Bring to a boil. Reduce heat. Simmer for 20 minutes',
-                    step3: 'Remove chicken from pan. Let stand for 10 minutes',
-                    step4: 'Remove chicken from bones. Shred meat into bite-sized pieces. Discard bones',
-                    step5: 'Add carrot, celery, and onion to pan. Cover and simmer for 10 minutes',
-                    step6: 'Add noodles and simmer 6 minutes',
-                    step7: 'Add chicken, salt, and black pepper. Cook for 2 minutes or until noodles are done',
-                    step8: 'Garnish with celery leaves, if desired'
+                    "Step 1": 'Combine the chicken stock, chicken thighs and breast half in a Dutch oven over medium-high heat',
+                    "Step 2": 'Bring to a boil. Reduce heat. Simmer for 20 minutes',
+                    "Step 3": 'Remove chicken from pan. Let stand for 10 minutes',
+                    "Step 4": 'Remove chicken from bones. Shred meat into bite-sized pieces. Discard bones',
+                    "Step 5": 'Add carrot, celery, and onion to pan. Cover and simmer for 10 minutes',
+                    "Step 6": 'Add noodles and simmer 6 minutes',
+                    "Step 7": 'Add chicken, salt, and black pepper. Cook for 2 minutes or until noodles are done',
+                    "Step 8": 'Garnish with celery leaves, if desired'
                 }
             ],
             images: [
@@ -124,33 +124,6 @@
                     stars: 3,
                     body: "I made this for my wife",
                     author: "hubby@loveydovey.com"
-                }
-            ]
-        },
-        {
-            name: 'Rare Ruby',
-            price: 95.95,
-            description: "Maecenas quis metus izzle fo shizzle my nizzle yo gangsta. Break yo neck, yall dope viverra fo. Curabitizzle sollicitudin boom shackalack quizzle purus.",
-            specification: "Lorizzle ipsizzle dolor sit dang, we gonna chung that's the shizzle shut the shizzle up. Nullam tellivizzle bling bling, aliquet volutpizzle, suscipit break it down, gravida.",
-            review: "Phasellizzle fo shizzle my nizzle crunk. Curabitur non velizzle the bizzle pede crackalackin facilisizzle. Bow wow wow rizzle nulla, iaculizzle fo shizzle, break.",
-            canPurchase: true,
-            soldOut: false,
-            images: [
-                {
-                    full: 'img/ruby.png',
-                    thumb: 'img/ruby-thumb.png'
-                }
-            ],
-            reviews: [
-                {
-                    stars: 4,
-                    body: "This Ruby is really hard to find",
-                    author: "jane@doe.com"
-                },
-                {
-                    stars: 2,
-                    body: "Mine came cracked",
-                    author: "james@jungle.com"
                 }
             ]
         }
