@@ -29,7 +29,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="defaultNavbar1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                    <li class="active-nav"><a href="index.html">Home</a></li>
                     <li><a href="about_us.html">About Us</a></li>
                     <li><a href="recipes.html">Recipes</a></li>
                    <!-- <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Recipes<span class="caret"></span></a>
@@ -43,8 +43,8 @@
                 </ul>
                 <form class="navbar-form navbar-right" role="search">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Username">
-						<input type="text" class="form-control" placeholder="Password">
+                        <input type="email" class="form-control" placeholder="Username">
+						<input type="password" class="form-control" placeholder="Password">
                     </div>
                     <button type="submit" class="btn btn-default">Login</button>
                 </form>
@@ -80,7 +80,9 @@
 				<!--<img src="assets/healthy-living-main.jpg" height="">-->
 				<div id="home-welcome-frame">
 					Please Join Us and Take a Tour of Our Wonderful Website!
-					<button type="button" formaction="about_us.html"> Start Your Tour Here! </button>
+                    <form action="about_us.html">
+                        <input type="submit" value="Start Your Tour Here!">
+                    </form>
 				</div>
 			</div>
         </div>

@@ -6,8 +6,36 @@
 
 }
 
+.active-nav a:visited{
+    background-color: #fa6b8c;
+    color:black;
+}
+
+.active-nav a:link{
+    background-color: #fa6b8c;
+    color:black;
+}
+
+.active-nav a:hover{
+    background-color: #fa6b8c;
+    color:black;
+}
+
+.active-nav a:active{
+    background-color: #fa6b8c;
+    color:black;
+}
+
 .navbar-collapse {
 	
+}
+
+#tour {
+    
+}
+
+#tour table{
+    border-spacing: inherit;
 }
 
 .navbar.navbar-default a:hover{
@@ -173,7 +201,7 @@ body {
 	background-color:rgba(0,201,241,0.50);
 	padding:40px;
 	width: 350px;
-	margin: auto;
+	margin-top: 15px;
 }
 
 #reg-form-frame{
